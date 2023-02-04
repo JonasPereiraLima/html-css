@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+}
+
+div#esp{
+    height: 100vh;
+    background-image: url(https://github.com/gustavoguanabara/html-css/blob/master/desafios/modulo-02/d011/imagens/espaco.jpg?raw=true);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    
+}
+
+div#astro{
+    position:absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
