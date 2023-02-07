@@ -1,68 +1,88 @@
 @import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
 
-*{
-    margin: 0;
+:root{
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
 }
 
-h1{
-    font-family: 'Passion One', cursive;
-    font-size: 9vw;
+*{
+    margin: 0px;
+    padding: 0px;
+}
 
+body{
+    font-family: var(--font1);
+    font-size: 1em;
 }
 
 header{
     background-color: black;
-    text-align: center;
     color: white;
-    padding: 50px 0;
+    padding: 50px 0px;
+    text-align: center;
 }
 
-a{
+header h1{
+    font-size: 3em;
+    font-variant: small-caps;
+    font-family: var(--font2);
+}
+
+header p{
+    padding-top: 10px;
+}
+
+header a, footer a{
     text-decoration: none;
     color: white;
+    font-weight: bold;
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
 }
 
 section{
-    font-size: 3.5vw;
+    margin: 40px 0px;
+    padding: 10px;
+    line-height: 2em;
+    font-family: var(--font3);
+    font-size: 2.5vw;
 }
 
 section p{
-    line-height: 2em;
-    padding: 60px 0;
-    font-family: 'Sriracha', cursive;
-    margin-left: 20px;
+    margin-bottom: 40px;
+}
+
+section.img p{
+    background-color: rgba(177, 172, 172, 0.521);
+    display: inline-block;
+   margin: 20px;
+   padding: 10px;
+}
+
+section.img{
+    padding: 30px 0px;
+    background-color: darkgray;
+    background-size: cover;
+    background-attachment: fixed;
+    box-shadow: 2px 6px 8px inset rgba(0, 0, 0, 0.466);
 }
 
 section#img1{
     background-image: url(imagens/background001.jpg);
-    background-repeat: no-repeat;
     background-position: right center;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    padding: 20px;
 }
 
 section#img2{
     background-image: url(imagens/background002.jpg);
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: cover;
-    background-attachment: fixed;
-    position: relative;
-    padding: 20px;
-}
-
-section > div.texto-image{
-    background-color: rgba(0, 0, 0, 0.514);
-    width: 45vw;
-    color: white;
 }
 
 footer{
     background-color: black;
     color: white;
+    padding: 10px;
     text-align: center;
-    font-size: 1.2em;
-    padding: 5px 0;
 }
