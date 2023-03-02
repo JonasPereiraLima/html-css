@@ -1,0 +1,62 @@
+@charset "UTF-8";
+
+/*Typical Device Breakpoints
+----------------------------
+Pequenas telas: até 600px
+Celular: de 600px até 768px
+Tablet: de 768px até 992px
+Desktop: de 992px até 1200px
+Grandes telas: acima de 1200px
+*/
+
+/* float: right or left */
+
+@media screen and (min-width: 768px) and (max-width: 992px) {
+    body{
+        background-image: linear-gradient(to bottom, var(--cor1), var(--cor2));
+    }
+
+    section#tela-login{
+        width: 80vw;
+        height: 300px;
+    }
+
+    div#imagem{
+        width: 40%;
+        height: 100%;
+        float: left;
+    }
+
+    div#login{
+        width: 60%;
+        height: 100%;
+        float: right;
+    }
+}
+
+@media screen and (min-width:992px) {
+    section#tela-login{
+        width: 900px;
+        height: 350px;
+    }
+
+    div#imagem{
+        width: 40%;
+        height: 100%;
+        float: left;
+    }
+
+    div#login{
+        width: 60%;
+        height: 100%;
+        float: right;
+    }
+
+    div#login > h1{
+        font-size: 2em;
+    }
+
+    div#login > p{
+        font-size: 1.2em;
+    }
+}

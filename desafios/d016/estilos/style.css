@@ -1,0 +1,127 @@
+@charset "UTF-8";
+
+/*
+verde: #49a09d
+lilás: #5f2c82 
+*/
+
+:root{
+    --cor1: #49a09d;
+    --cor2: #5f2c82;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--cor2);
+}
+
+main{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+}
+
+section#tela-login{
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.473);
+    width: 250px;
+    height: 540px;
+    background-color: white;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    transition: width 0.3s, height 0.3s;
+    transition-timing-function: ease;
+}
+
+div#imagem{
+    background-image: url(../imagens/pexels-tom-fisk-4011966.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 40%;
+    display: block;
+}
+
+div#login{
+    display: block;
+    padding: 10px;
+}
+
+div#login > h1{
+    text-align: center;
+}
+
+div#login > p{
+    font-size: 0.8em;
+    margin: 10px 0px;
+}
+
+form > div.acesso{
+    background-color: var(--cor2);
+    border-radius: 10px;
+    border: 1px solid var(--cor2);
+    height: 40px;
+    margin: 10px 0px;
+    position: relative;
+}
+
+form span#person, form span#key{
+    border-radius: 10px;
+    height: 30px;
+    width: 40px;
+    background-color: var(--cor2);
+    padding: 5px;
+    text-align: center;
+}
+
+form > div.acesso > input{
+    width: calc(100% - 40px);
+    height: 38px;
+    border-radius: 10px;
+    position: absolute;
+    
+}
+
+form input#submit{
+    width: 100%;
+    height: 40px;
+    display: block;
+    background-color: var(--cor1);
+    color: white;
+    border: 1px solid #44928f;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+form input#submit:hover{
+    background-color: #306d6b;
+}
+
+form a#aminesia{
+    margin: 10px 0px;
+    width: 100%;
+    height: 40px;
+    display: block;
+    background-color: white;
+    color: #306d6b;
+    border: 1px solid #44928f;
+    cursor: pointer;
+    border-radius: 10px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+}
+
+form a#aminesia:hover{
+    background-color: #4bd8d3;
+}
